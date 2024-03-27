@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
+
+<button onclick="confirmDialog()">Click Me</button>
+
+<script>
+function confirmDialog() {
+    let userConfirmation = confirm("Do you want to proceed?");
+
+    if (userConfirmation) {
+        alert("You clicked OK. Proceeding...");
+    } else {
+        alert("You clicked Cancel. Exiting...");
+    }
+}
 </script>
 
 </body>
-
 </html>
